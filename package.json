@@ -1,0 +1,29 @@
+{
+  "name": "muse-credentials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel --stage 1 -d lib src; babel --stage 1 -d test src/test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runvnc/muse-credentials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/runvnc/muse-credentials/issues"
+  },
+  "homepage": "https://github.com/runvnc/muse-credentials",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "fs-extra": "^0.18.4",
+    "mocha": "^2.2.5",
+    "shelljs": "^0.5.0"
+  },
+  "dependencies": {
+    "json-update": "^1.2.0"
+  }
+}
