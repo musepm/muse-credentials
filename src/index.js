@@ -1,19 +1,16 @@
+var json = require('json-update'),
+    pr = require('es6-promisify'),
+    jsonUpdate = pr(json.update);
+
 var obj = {
-  save(data, cb) {
-    require('json-update').update('muse.json', data, (e) => {
-      if (e) {
-        console.error(`Could not save muse.json: ${e}`);
-        process.exit(2);
-      }
-      cb();
-    });
+  async save(data) {
+    await jsonUpdate('muse.json', data);
   },
 
-  newCredentials(data) {
-    obj.save(data, () => {
-      console.log("Muse saved credentials.");
-    });
+  async newCredentials(data) {
+    await obj.save(data);
   }    
+
 }
 
 module.exports = obj;

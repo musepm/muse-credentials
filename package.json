@@ -4,8 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel --stage 1 -d lib src; babel --stage 1 -d test src/test",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel --optional runtime --stage 1 -d lib src",
+    "test": "mocha lib/test"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,13 @@
   "homepage": "https://github.com/runvnc/muse-credentials",
   "devDependencies": {
     "babel": "^5.4.7",
+    "babel-runtime": "^5.4.7",
     "fs-extra": "^0.18.4",
     "mocha": "^2.2.5",
     "shelljs": "^0.5.0"
   },
   "dependencies": {
+    "es6-promisify": "^1.1.1",
     "json-update": "^1.2.0"
   }
 }
