@@ -1,3 +1,5 @@
+require("babel").transform("code", { optional: ["runtime"] });
+
 var json = require('json-update'),
     pr = require('es6-promisify'),
     jsonLoad = pr(json.load),
