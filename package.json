@@ -1,6 +1,6 @@
 {
   "name": "musepm-credentials",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "shelljs": "^0.5.0"
   },
   "dependencies": {
+    "babel": "^5.4.7",
     "babel-runtime": "^5.4.7",
     "es6-promisify": "^1.1.1",
     "json-update": "^1.2.0"
