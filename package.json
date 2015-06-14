@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/runvnc/muse-credentials",
   "devDependencies": {
-    "babel": "^5.4.7",
+    "babel": "^5.5.8",
     "fs-extra": "^0.18.4",
     "mocha": "^2.2.5",
     "shelljs": "^0.5.0"
   },
   "dependencies": {
-    "babel": "^5.4.7",
-    "babel-runtime": "^5.4.7",
+    "babel": "^5.5.8",
+    "babel-runtime": "^5.5.8",
     "es6-promisify": "^1.1.1",
     "json-update": "^1.2.0"
   }
